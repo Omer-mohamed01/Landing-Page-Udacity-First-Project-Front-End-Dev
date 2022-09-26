@@ -1,0 +1,398 @@
+
+/* ---- Base Rules ---- */
+body {
+    background: rgb(136,203,171);
+    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    min-height: 90vh;
+    position: relative;
+    top: 10vh;
+}
+
+#section1{
+    height: 90vh;
+}
+
+#image {
+    width: 40em;
+    height: 40em;
+    position: relative;
+    top: -37em;
+    left: 70em;
+}
+
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 2em 1rem;
+    transition: 1.5s;
+    text-align: center;
+    width: 6.5em;
+    font-size: 7em;
+    margin: 2em 4rem 1em;
+}
+
+h1:hover {
+    transform: scale(1.1) skew(5deg);
+}
+
+
+h2 {
+    border-bottom: 1px solid #cc1;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 3em;
+    color: #fff;
+}
+
+p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+    position: relative;
+    top: 3em;
+    font-style: italic;
+    transition: 1.6s;
+}
+
+p:hover {
+    font-size: 1.3em;
+}
+
+
+
+/* Header Styles */
+.page__header {
+    background: #fff;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    height: 4em;
+}
+
+/* Navigation Styles*/
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    font: italic bold 30px monospace;
+    padding: 0.5em 2em 0.5em 2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar__menu li a {
+    text-decoration: none;
+    color: #005aa7;
+
+}
+
+.navbar__menu li:hover {
+    background-color: wheat;
+
+}
+
+/*styling active state */
+
+.link-active-class {
+    background-color: wheat;
+    border-radius: 500px;
+}
+
+/* ---- Main Styles ---- */
+main {
+    margin: 10vh 1em 10vh;
+}
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container {
+    text-align: left;
+    max-width: 50em;
+    padding: 4em;
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+                                /*styling paragraph element*/
+#section1 p{
+    color: #b7f8db;
+}
+
+#section2 p{
+    color: #e5d335;
+}
+
+#section3 p{
+    color: #89f7fe;
+}
+
+#section4 p{
+    color: #24fe41;
+}
+
+
+/* Footer Styles */
+.page__footer {
+    background: #0a0a0a;
+    padding: 3em;
+    height: 1em;
+
+}
+
+.page__footer p{
+    position: relative;
+    top: -1em;
+    left: 3em;
+    width: 7em;
+}
+
+
+            /*for usability and responsibility*/
+@media screen and (max-width: 915px) {
+    section {
+        width: 70vh;
+    }
+    .page__header {
+        position: fixed;
+        z-index: 5;
+        height: 3em;
+    }
+    .navbar__menu li {
+        font-size: 15px;
+        float: left;
+        margin-left: -1em;
+    }
+    .main__hero h1 {
+        font-size: 4em;
+    }
+    section p {
+        font-size: 20em;
+        line-height: 2em;
+        width: 30em;
+    }
+    #image1 {
+        position: relative;
+        top: -40em;
+        left: 25em;
+        width: 25em;
+        height: 30em;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .page__header {
+        height: 4em;
+    }
+    .navbar__menu li {
+        font-size: 20px;
+        margin-left: -1em;
+    }
+    .main__hero h1 {
+        font-size: 3.5em;
+    }
+    .your-active-class p {
+        font-size: 1.2em;
+        line-height: 2em;
+        width: 25em;
+    }
+    #image1 {
+        position: relative;
+        top: -40em;
+        left: 27em;
+        width: 25em;
+        height: 30em;
+    }
+    #section2 p, #section4 p {
+        position: relative;
+        left: 10em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    section {
+        height: 100vh;
+        padding-bottom: 6em;
+    }
+    .navbar__menu li {
+        font-size: 12px;
+        margin-left: -1.5em;
+    }
+    .main__hero h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    p {
+        font-size: 1em;
+    }
+    .page__header {
+        height: 5em;
+    }
+    .navbar__menu li {
+        font-size: 30px;
+    }
+    .main__hero h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .navbar__menu li {
+        font: italic bold 0.8em monospace;
+        padding-left: 4em;
+    }
+    #image1 {
+        position: relative;
+        top: -35em;
+        left: 25em;
+        width: 12em;
+        height: 35em;
+    }
+    #section1 p {
+        font-size: 15px;
+        width: 20em;
+    }
+    #section2 h2, #section4 h2 {
+        font-size: 1.5em;
+        position: relative;
+        left: -21em;
+    }
+    #section2 p, #section3 p, #section4 p {
+        position: relative;
+        left: 2em;
+        width: 21em;
+        font-size: 15px;
+    }
+    #section2 p, #section4 p {
+        left: -2em;
+    }
+    #section3 p {
+        left: -1em;
+    }
+    section:nth-of-type(even) .landing__container::before {
+        top: 4.5em;
+        right: 33em;
+        width: 20vh;
+        height: 10vh;
+    }
+}
+    
+
+@media screen and (max-width: 395px) {
+    .navbar__menu li {
+        font: italic bold 0.8em monospace;
+        padding-left: 1.7em;
+    }
+    .page__header {
+        height: 2em;
+    }
+    h1 {
+        font-size: 2em;
+        position: relative;
+        left: -1em;
+    }
+    #section1 p {
+        font-size: 10px;
+        width: 15em;
+    }
+
+    #image1 {
+        width: 8em;
+        height: 30em;
+        position: relative;
+        top: -35em;
+        left: 12em;
+    }
+    #section2 h2, #section4 h2 {
+        font-size: 1.5em;
+        position: relative;
+        left: -5em;
+    }
+    #section2 p, #section3 p, #section4 p {
+        position: relative;
+        left: -2em;
+        font-size: 13px;
+    }
+    section:nth-of-type(odd) .landing__container::before {
+        top: 5em;
+        left: 3em;
+        width: 25vh;
+        height: 10vh;
+    }
+    section:nth-of-type(even) .landing__container::before {
+        top: 4.5em;
+        right: 26em;
+        width: 20vh;
+        height: 10vh;
+    }
+}
+@media screen and (max-width: 360px) {
+    #section1 {
+        position: relative;
+        top: -5em;
+    }
+    #section1 p {
+        font-size: 0.7em;
+        line-height: 2em;
+    }
+    #image1 {
+        position: relative;
+        top: -40em;
+        left: 14em;
+        width: 10em;
+        height: 20em;
+    }
+    #section2 h2, #section4 h2 {
+        position: relative;
+        left: -8em;
+    }
+    section:nth-of-type(even) .landing__container::before {
+        top: 4.5em;
+        right: 15em;
+        width: 20vh;
+        height: 10vh;
+    }
+    #section2 p, #section4 p, #section3 p {
+        position: relative;
+        left: 3em;
+        font-size: 0.8em;
+    }
+    #section3 p {
+        left: -1em;
+    }
+}
+
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+    }
+}
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
